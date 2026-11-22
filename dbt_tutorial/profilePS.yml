@@ -1,0 +1,11 @@
+dbt_tutorial:
+    target: dev
+    outputs:
+        dev:
+            catalog: dbt-tutorial
+            host: dbc-840ae75a-d757.cloud.databricks.com
+            http_path: /sql/1.0/warehouses/60ddaea57b125594
+            schema: default
+            threads: 1
+            token: ''
+            type: databricks

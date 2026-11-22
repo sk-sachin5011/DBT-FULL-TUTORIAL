@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: source
+    database: dbt-tutorial  ## catalog name
+    schema: source 
+    tables:
+      - name: fact_sales
+        description: "Sales data from the bronze layer"
+      - name: dim_customer
+        description: "Customer data from the bronze layer"
+      - name: dim_product
+        description: "Product data from the bronze layer"
+      - name: dim_store 
+        description: "Store data from the bronze layer"
+      - name: fact_returns
+        description: "Returns data from the bronze layer"
+      - name: dim_date
+        description: "Date data from the bronze layer"

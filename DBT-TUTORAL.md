@@ -23,5 +23,9 @@
         - generate the token from datbricks and enter
         - ENter the catalog name
         - enter the schema name
+
+    * run dbt project
+        - move inside project folder
+        - run `dtb run`
+
         
-    * 

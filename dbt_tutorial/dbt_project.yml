@@ -31,6 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_tutorial:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    # Config indicated by + and applies to all files under models/bronze/
+    bronze:
+      +materialized: table # default it will create views replace view with table, incremental or ephemeral to create table in databricks
+      +tags: [bronze]
