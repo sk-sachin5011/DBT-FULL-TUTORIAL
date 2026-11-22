@@ -3,8 +3,8 @@ dbt_tutorial:
     outputs:
         dev:
             catalog: dbt-tutorial
-            host: dbc-840ae75a-d757.cloud.databricks.com
-            http_path: /sql/1.0/warehouses/60ddaea57b125594
+            host: 'host_name_here'
+            http_path: 'http_path_here'
             schema: default
             threads: 1
             token: ''
